@@ -19,7 +19,7 @@ def upload(request):
         data = FileUpload.objects.all()
         data_inf = processing(uploaded_files)
         return download_excel(data_inf)
-    return render(request, "Templates/index.html", locals())
+    return render(request, "index.html", locals())
 
 
 def download_excel(data_inf):
