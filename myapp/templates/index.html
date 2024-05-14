@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ResumeParser</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+</head>
+<body>
+<div class="h1-container">
+    <h1 class = "h1-heading">Resume Parser</h1>
+</div>
+<div class = 'details'>
+    <div class="tagline"> <h4 class = 'tagline_head'>Capture, Categorize and Extract Unseen, Unstructured Resumes into structured data within seconds.</h4></div>
+    <img id="img_png" src="{% static 'img.png' %}" alt="Extraction image">
+</div>
+<div class="form-container">
+<form action = "" method = "post" enctype="multipart/form-data">
+{% csrf_token %}
+<input type="file" id="fileUpload" name="file[]" multiple>
+    <input class = "submit-button" type = "submit" value = "Submit">
+</form>
+    </div>
+
+</div>
+
+</body>
+</html>
