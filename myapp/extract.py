@@ -1,4 +1,6 @@
 import pandas as pd
+import nltk
+nltk.download('stopwords')
 from pyresparser import ResumeParser
 from io import BytesIO
 import warnings
