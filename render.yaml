@@ -1,0 +1,14 @@
+# render.yaml
+
+# Environment configuration
+environment:
+  # Set NLTK_DATA environment variable
+  NLTK_DATA: /opt/render/project/src/nltk_data
+
+# Build configuration
+build:
+  # Create NLTK_DATA directory
+  - mkdir -p /opt/render/project/src/nltk_data
+  # Install NLTK and download stopwords corpus
+  - pip install nltk
+  - python -c "import nltk; nltk.download('stopwords', download_dir='/opt/render/project/src/nltk_data')"
