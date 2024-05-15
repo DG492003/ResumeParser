@@ -3,4 +3,4 @@ from django.db import models
 
 # Create your models here.
 class FileUpload(models.Model):
-    file = models.FileField(null=True)
+    file = models.FileField(upload_to='uploads/')
