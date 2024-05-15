@@ -5,4 +5,5 @@ Flask
 nltk
 pandas
 pyresparser
+whitenoise
 requests
